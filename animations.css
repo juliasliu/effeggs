@@ -1,0 +1,261 @@
+/* -- LOADING ANIMATIONS -- */
+/* Loader one: Pulse */
+
+@keyframes pulse {
+	from {
+	  opacity: 1;
+	  transform: scale(0);
+	}
+	to {
+	  opacity: 0;
+	  transform: scale(1);
+	}
+}
+
+/* Loader two: Wave */
+@keyframes wave {
+	0% {
+	  transform: translateY(0);
+	}
+	30% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-30px);
+	}
+	70% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+/* Loader three: Flip */
+@keyframes flip {
+	0% {
+	  transform: perspective(300px) rotateX(180deg) rotateY(0deg);
+	}
+	50% {
+	  transform: perspective(300px) rotateX(180deg) rotateY(180deg);
+	}
+	100% {
+	  transform: perspective(300px) rotateX(0deg) rotateY(180deg);
+	}
+}
+
+/* Loader four: Spin */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+		border-radius: 50%;
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin-color {
+	0% {
+		background: #10D4C6;
+	}
+
+	30% {
+		background: #3068CD;
+	}
+
+	55% {
+		background: #7910D4;
+	}
+
+	90% {
+		background: #41EA97;
+	}
+
+	100% {
+		background: #10D4C6;
+	}
+}
+
+/* Loader five: Basketball */
+@keyframes ballBounce {
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes ballShadow {
+  100% {
+    opacity: 0.6;
+    transform: scale(0.5);
+  }
+}
+
+/* Loader six: Submarine */
+@keyframes engine-spin {
+  100% {
+      transform:rotate(360deg);
+  }
+}
+
+@keyframes leds-off {
+  100% {
+      opacity:0.3;
+  }
+}
+
+@keyframes helix-movement {
+  100% {
+      background: linear-gradient(#D93A54, #D93A54);
+      background-size: 100% 20px;
+  }
+}
+
+
+@keyframes diving {
+	0% {
+         margin-top:5px;
+	}
+    50% {
+		 margin-top:15px;
+	}
+
+    100% {
+		 margin-top:5px;
+	}
+}
+
+@keyframes diving-rotate {
+	0% {
+         transform:rotate(0deg);
+	}
+    50% {
+         transform:rotate(3deg);
+	}
+    75% {
+        transform:rotate(-2deg);
+	}
+    100% {
+        transform:rotate(0deg);
+	}
+}
+
+@keyframes bubble1-h-movement {
+  0% {
+      margin-left: 80%;
+  }
+  100% {
+       margin-left: -100%;
+  }
+}
+
+@keyframes bubble2-h-movement {
+  0% {
+      margin-left: 65%;
+  }
+  100% {
+       margin-left: -5%;
+  }
+}
+
+@keyframes bubble1-v-movement {
+  0% {
+      margin-top: 115px;
+  }
+  100% {
+      margin-top:160px;
+  }
+}
+
+@keyframes bubble2-v-movement {
+  0% {
+      margin-top: 115px;
+  }
+  100% {
+      margin-top:90px;
+  }
+}
+
+@keyframes bubble-scale-movement {
+  0% {
+        transform: scale(1.4);
+    }
+  100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes light-movement {
+  0% {
+      transform: rotate(-40deg);
+  }
+  50% {
+      transform: rotate(-70deg);
+  }
+  100% {
+      transform: rotate(-40deg);
+  }
+}
+
+
+/* Loader seven: Airplane */
+@keyframes plainfly {
+	0% {
+		left: -10%;
+		-webkit-transform: scale(.4);
+		-ms-transform: scale(.4);
+		-o-transform: scale(.4);
+		transform: scale(.4);
+	}
+	50% {
+		left: 110%;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+	51% {
+		-webkit-transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+	100% {
+		left: -10%;
+		-webkit-transform: scale(1.4) rotateY(180deg);
+		-ms-transform: scale(1.4) rotateY(180deg);
+		-o-transform: scale(1.4) rotateY(180deg);
+		transform: scale(1.4) rotateY(180deg);
+	}
+}
+@keyframes cloud {
+	0% { left: 15%; }
+	50% { left: 63%; }
+	100% { left: 15%; }
+}
+@keyframes cloud_a {
+	0% { left: 62%; }
+	50% { left: 90%; }
+	100% { left: 62%; }
+}
+@keyframes cloud_b {
+	0% { left: 50%; }
+	50% { left: 23%; }
+	100% { left: 50%; }
+}
+@keyframes cloud_c {
+	0% { left: 37%; }
+	50% { left: 47%; }
+	100% { left: 37%; }
+}
+@keyframes cloud_d {
+	0% { left: 25%; }
+	50% { left: 65%; }
+	100% { left: 25%; }
+}

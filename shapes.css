@@ -1,0 +1,117 @@
+.loader.one {
+	width: 100px;
+	height: 100px;
+}
+
+.loader.one .circle {
+	height: 100px;
+	width: 100px;
+	background: #E427F9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	animation: pulse 2s infinite;
+}
+
+.loader.one .circle.second {
+	animation-delay: 0.5s;
+}
+
+.loader.two {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 110px;
+}
+
+.loader.two .dot {
+	height: 30px;
+	width: 30px;
+	background: #000;
+	border-radius: 15px;
+	animation: wave 2s infinite;
+	background: #F76A4D;
+}
+.loader.two .dot.second {
+	animation-delay: 0.25s;
+	background: #4DB1F7;
+}
+.loader.two .dot.third {
+	animation-delay: 0.5s;
+	background: #7DE76A;
+}
+
+.loader.three .flip-tile {
+	background: #F98527;
+	height: 100px;
+	width: 100px;
+	animation: flip 2.6s infinite;
+}
+
+.loader.four .rings {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.loader.four .ring {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.loader.four .ring.two {
+	width: 80%;
+	height: 80%;
+}
+.loader.four .ring.three {
+	width: 60%;
+	height: 60%;
+}
+
+.loader.four .ring .mask {
+	width: 93%;
+	height: 93%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	background: #E5F1F7;
+}
+
+.loader.four .ring .arc-container {
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 10%;
+	overflow: hidden;
+	transform-origin: 50% 50%;
+	animation: spin 1s infinite linear;
+}
+.loader.four .ring.two .arc-container {
+	animation-duration: 1.1s;
+	animation-delay: 0.2s;
+}
+.loader.four .ring.three .arc-container {
+	animation-duration: 0.9s;
+	animation-delay: 0.1s;
+}
+
+.loader.four .ring .arc {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	background: #10D4C6;
+	animation: spin-color 2.2s infinite;
+}
+.loader.four .ring.two .arc {
+	animation: spin-color 2s infinite reverse;
+}
+.loader.four .ring.three .arc {
+	animation: spin-color 2.4s infinite;
+}
